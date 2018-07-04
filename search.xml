@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hello hexo markdown]]></title>
+    <url>%2F2018%2F07%2F04%2Fhello-hexo-markdown%2F</url>
+    <content type="text"><![CDATA[这是短小精悍的文章摘要 紧接着文章摘要的正文内容 数学公式： $a=b=c$ $$F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t) \, e^{ - i \omega t}dt$$ 代码：12[language] [title] [url] [link text]code snippet]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hello</tag>
+        <tag>Hexo</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+</search>

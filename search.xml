@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Calculus]]></title>
+    <url>%2F2018%2F07%2F04%2FSub_Math_Review%2FCalculus%2F</url>
+    <content type="text"><![CDATA[这是短小精悍的文章摘要 紧接着文章摘要的正文内容 数学公式： $a=b=c$ $$F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t) \, e^{ - i \omega t}dt$$ 代码：12[language] [title] [url] [link text]code snippet]]></content>
+      <tags>
+        <tag>Math</tag>
+        <tag>Calculus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Math_Review]]></title>
+    <url>%2F2018%2F07%2F04%2FMath-Review%2F</url>
+    <content type="text"><![CDATA[This is a personal math review. I will review what I have learned about math in here. Chapter 1: Calculus]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hello hexo markdown]]></title>
     <url>%2F2018%2F07%2F04%2Fhello-hexo-markdown%2F</url>
     <content type="text"><![CDATA[这是短小精悍的文章摘要 紧接着文章摘要的正文内容 数学公式： $a=b=c$ $$F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t) \, e^{ - i \omega t}dt$$ 代码：12[language] [title] [url] [link text]code snippet]]></content>

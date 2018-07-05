@@ -143,7 +143,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/07/04/Test/hello-hexo-markdown/freedom.jpg">
 <meta property="og:image" content="http://yoursite.com/images/freedom.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/07/04/Test/hello-hexo-markdown/freedom.jpg">
-<meta property="og:updated_time" content="2018-07-05T10:30:00.689Z">
+<meta property="og:updated_time" content="2018-07-05T10:45:48.307Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hello hexo markdown">
 <meta name="twitter:description" content="这是短小精悍的文章摘要">
@@ -409,6 +409,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/04/Test/hello-hexo-markdown/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/04/Test/hello-hexo-markdown/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -520,6 +530,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -808,6 +821,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'JvBWDBS6oNegBOxm0PVJPsdl-gzGzoHsz',
+        appKey: 'PuVrq3nPGOGgo37636fS5kbY',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

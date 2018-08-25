@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[HEXO 基本操作]]></title>
     <url>%2F2018%2F08%2F25%2FTest%2FHexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[HEXO 的一些基本用法 安装HEXO预备工具在安装前，需要在电脑上安装下列应用程序： “Nodes.js” “Git” 安装Hexo工具在命令提示符下输入以下代码安装 1npm install -g hexo-cli 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install 详细信息，请参考 HEXO官网，NEXT主题, 伤神的博客 #使用HEXO Create a new post1hexo new &quot;My New Post&quot; or 1hexo n &quot;My New Post&quot; Run server1hexo server or 1hexo s Generate static files1hexo generate or 1hexo g Deploy to remote sites1hexo deploy or 1hexo d]]></content>
+    <content type="text"><![CDATA[HEXO 的一些基本用法 安装HEXO预备工具在安装前，需要在电脑上安装下列应用程序： Nodes.js Git 安装Hexo工具在命令提示符下输入以下代码安装 1npm install -g hexo-cli 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install 详细信息，请参考 HEXO官网，NEXT主题, 伤神的博客。 使用HEXOCreate a new post1hexo new &quot;My New Post&quot; or 1hexo n &quot;My New Post&quot; Run server1hexo server or 1hexo s Generate static files1hexo generate or 1hexo g Deploy to remote sites1hexo deploy or 1hexo d]]></content>
       <categories>
         <category>Hello</category>
       </categories>

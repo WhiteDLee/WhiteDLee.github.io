@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="english">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Times New Roman:300,300italic,400,400italic,700,700italic|Times New Roman:300,300italic,400,400italic,700,700italic|Times New Roman:300,300italic,400,400italic,700,700italic|Times New Roman:300,300italic,400,400italic,700,700italic|Times New Roman:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-180x180.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Instructions,Git," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Recording some useful operations of Git.">
+<meta name="keywords" content="Instructions,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Private instructions of Git">
+<meta property="og:url" content="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/index.html">
+<meta property="og:site_name" content="SLOTH">
+<meta property="og:description" content="Recording some useful operations of Git.">
+<meta property="og:locale" content="english">
+<meta property="og:image" content="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Personal%20instructions%20of%20Git/TheMeansOFAdd&Commit.png">
+<meta property="og:image" content="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Personal%20instructions%20of%20Git/GitBranch_diagram.png">
+<meta property="og:updated_time" content="2021-02-25T15:22:09.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Private instructions of Git">
+<meta name="twitter:description" content="Recording some useful operations of Git.">
+<meta name="twitter:image" content="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Personal%20instructions%20of%20Git/TheMeansOFAdd&Commit.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/"/>
+
+
+
+
+
+  <title>Private instructions of Git | SLOTH</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-121876909-1', 'auto');
+  ga('send', 'pageview');
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="english">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SLOTH</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="W-D-Lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/no_freedom.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SLOTH">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Private instructions of Git</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-02-21T00:00:00+08:00">
+                2021-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Instructions/" itemprop="url" rel="index">
+                    <span itemprop="name">Instructions</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Recording some useful operations of Git.</p>
+<a id="more"></a>
+<h1 id="Basic-info"><a href="#Basic-info" class="headerlink" title="Basic info."></a>Basic info.</h1><ol>
+<li>Download from “<a href="https://git-scm.com/“" target="_blank" rel="noopener">https://git-scm.com/“</a>;</li>
+</ol>
+<h1 id="Use-it-by-Git-Bash"><a href="#Use-it-by-Git-Bash" class="headerlink" title="Use it by Git Bash"></a>Use it by Git Bash</h1><ol>
+<li>Open “Git-&gt;Git Bash”, then a window popped up;</li>
+<li><p>Log in your Github account by</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Make one path as the repository that git can organize by</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add a file (e.g. “readme.txt”) into the repository by</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Then tell the git which change you did by</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;wrote a read me file&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p><font color="red">Note:</font> we can use “git –help” to find some instructions or “get help -commit” to find some detailed.</p>
+</blockquote>
+<blockquote>
+<p><font color="red">Note:</font> Git operations should be excuted in the repository path.</p>
+</blockquote>
+<ol start="6">
+<li><p>use “git status” to check whether the files in this repository has been changed, for example</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line">        modified:   readme.txt</span><br><span class="line"></span><br><span class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Show what changes have been done by “git diff” (from last add to now), for example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$git diff readme.txt</span><br><span class="line">diff --git a/readme.txt b/readme.txt</span><br><span class="line">index d8036c1..d55a7b6 100644</span><br><span class="line">--- a/readme.txt</span><br><span class="line">+++ b/readme.txt</span><br><span class="line">@@ -1,2 +1,4 @@</span><br><span class="line"> Git is a version control system.</span><br><span class="line">+Git is free software.</span><br><span class="line">+Git is a distributed version control system.</span><br><span class="line"> Git is free software.</span><br><span class="line">\ No newline at end of file</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Show modify record by “git log”, which can show “Author”, “Date” and “uploaded commit words”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br><span class="line">commit f32d6c294fc38c0feeb860ba7fd024e9179a5c3d (HEAD -&gt; master)</span><br><span class="line">Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">Date:   Mon Feb 22 22:12:05 2021 +0800</span><br><span class="line"></span><br><span class="line">    add repeated words</span><br><span class="line"></span><br><span class="line">commit bc95568847ff2e3296d473b34670c21f1e523eb0</span><br><span class="line">Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">Date:   Mon Feb 22 22:08:43 2021 +0800</span><br><span class="line"></span><br><span class="line">    add distributed</span><br><span class="line"></span><br><span class="line">commit 0d868ea57e13c48f4f5d4df593897ec8a038a513</span><br><span class="line">Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">Date:   Mon Feb 22 21:30:54 2021 +0800</span><br><span class="line"></span><br><span class="line">    wrote a read me file</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Back to previous version by “git reset –hard head~1”, where “head~n” means back to last n version.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard head~1</span><br><span class="line">HEAD is now at bc95568 add distributed</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If you want to back to one special version (even though the version you abandoned), you can use “git reset –hard f32d6”, where “f32d6” is the number of the version.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard f32d6</span><br><span class="line">HEAD is now at f32d6c2 add repeated words</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If you forget the version num, you can use “git reflog” to see all version num</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line">f32d6c2 (HEAD -&gt; master) HEAD@&#123;0&#125;: reset: moving to f32d6</span><br><span class="line">bc95568 HEAD@&#123;1&#125;: reset: moving to head~1</span><br><span class="line">f32d6c2 (HEAD -&gt; master) HEAD@&#123;2&#125;: commit: add repeated words</span><br><span class="line">bc95568 HEAD@&#123;3&#125;: commit: add distributed</span><br><span class="line">0d868ea HEAD@&#123;4&#125;: commit (initial): wrote a read me file</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>discard changes in working directory by using “git restore”</p>
+</li>
+<li><p>delet files: </p>
+<blockquote>
+<p>“rm”: remove any files and can be used anywhere;</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>“git rm”: remove the files in the Git workspace and stage, and only be used in Git workspace. </p>
+</blockquote>
+<blockquote>
+<p>“git rm –cached”: remove the files in the stage, and only be used in Git workspace.</p>
+</blockquote>
+<ol start="14">
+<li>establish branch by “git checkout -b”, where “-b” means “establish and switch”; or you finish it step by step, “git branch” and “git checkout”;<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b dev (git switch -c dev)</span><br><span class="line">Switched to a new branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br><span class="line">$ git checkout/switch dev</span><br><span class="line">Switched to branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
+<ol start="15">
+<li><p>show all branches and current pointed branch by “git branch”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$git branch</span><br><span class="line">* dev</span><br><span class="line">  main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>merge the branch with current branch. (at the same time, deleting the branch by “git merge –no-ff”)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git merge dev</span><br><span class="line">Updating dc46a9e..564e513</span><br><span class="line">Fast-forward</span><br><span class="line"> readme.txt | 1 +</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>delete branch</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d dev</span><br><span class="line">Deleted branch dev (was 564e513).</span><br></pre></td></tr></table></figure>
+<ol start="18">
+<li><p>use “git stash” to store current working space; use “git stash list” to print all stored working space; use “git stash pop” to restore stored workspace.</p>
+</li>
+<li><p>use “git cherry-pick” to copy special changes.  </p>
+<blockquote>
+<p><font color="yellow"> Note:</font> I am not very clear about this commend.</p>
+</blockquote>
+</li>
+</ol>
+<ol start="20">
+<li>we can use “git log –graph” to see the branch graph.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">$ git log --graph</span><br><span class="line">*   commit f2c4e7eee97b36d077f182393381ebbfa0f5f686 (HEAD -&gt; main)</span><br><span class="line">|\  Merge: 79700e3 c25e138</span><br><span class="line">| | Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">| | Date:   Wed Feb 24 21:34:29 2021 +0800</span><br><span class="line">| |</span><br><span class="line">| |     merge dev</span><br><span class="line">| |</span><br><span class="line">| * commit c25e1387f18caeea8e6005161476b691779e9bc5</span><br><span class="line">| | Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">| | Date:   Wed Feb 24 21:31:02 2021 +0800</span><br><span class="line">| |</span><br><span class="line">| |     delete one line</span><br><span class="line">| |</span><br><span class="line">* | commit 79700e392d76f968b35a623587df8fb036d1f50a</span><br><span class="line">|/  Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">|   Date:   Wed Feb 24 21:32:01 2021 +0800</span><br><span class="line">|</span><br><span class="line">|       add one line</span><br><span class="line">|</span><br><span class="line">* commit 564e513cb2d7a9820f40971c76e54a5685d82dba</span><br><span class="line">| Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">| Date:   Wed Feb 24 21:23:27 2021 +0800</span><br><span class="line">|</span><br><span class="line">|     creat a branch</span><br><span class="line">|</span><br><span class="line">...skipping...</span><br><span class="line">* commit 0d868ea57e13c48f4f5d4df593897ec8a038a513</span><br><span class="line">  Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">  Date:   Mon Feb 22 21:30:54 2021 +0800</span><br><span class="line"></span><br><span class="line">      wrote a read me file</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p><font color="red">Note:</font> we can use “git rebase” to comb branch graph log.</p>
+</blockquote>
+<ol start="21">
+<li><p>tag. Actually, it is adding a point with “tag name” into certain “commit”.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git tag v0.0</span><br><span class="line">$ git tag v0.9 f52c633</span><br><span class="line">$ git tag -d v0.0</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ignore some special types of file, which will not be orgonized by “Git”. The method is downloading relative “.gitignore” file according to your demand in the <a href="&quot;https://github.com/github/gitignore&quot;">link</a> or establish your own ignore list (guiding by the <a href="https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208" target="_blank" rel="noopener">link</a>). Then add this file into the repository.</p>
+</li>
+<li><p>configure alias and build Git server, please see the <a href="https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424" target="_blank" rel="noopener">link</a></p>
+</li>
+</ol>
+<h1 id="Use-it-by-“Git-Gui”"><a href="#Use-it-by-“Git-Gui”" class="headerlink" title="Use it by “Git Gui”"></a>Use it by “Git Gui”</h1><ol>
+<li>Show modify record: “Repository-&gt;Visualize master’s history”.</li>
+</ol>
+<h1 id="Pull-your-code-to-Github"><a href="#Pull-your-code-to-Github" class="headerlink" title="Pull your code to Github"></a>Pull your code to Github</h1><h2 id="Building-Connection-with-Github"><a href="#Building-Connection-with-Github" class="headerlink" title="Building Connection with Github"></a>Building Connection with Github</h2><ol>
+<li><p>Generate SSH-Key as folowing. (omit it if you have SSH-Key) Then you will get two files, “id_rsa” and “id_rsa.pub”; Next, you will upload the public key, “id_rsa.pub”, to Github and use private key, “id_ rsa”, to log in remotely.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot; -b 2048</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Upload the public key, “id_rsa.pub”, to the Github.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Account-&gt;settings-&gt;SSH and GPG keys-&gt;New SSH key</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Build repository in Github and push local data into the Github. After build new repository, you will get the guide how to push your local data, like the following, which means push local version on main branch to the remote version on origin b  ranch.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin https://github.com/WhiteDLee/Git.git</span><br><span class="line">$ git branch -M main</span><br><span class="line">$ git push -u origin main</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p><font color="red"> Note:</font> in the last command, “-u” means push all data. In the future, you can upload updated data by using<br><figure class="highlight plain"><figcaption><span>push origin main"```.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4. Build repository in Github and clone to the local. &quot;$ git clone git@github.com: repository&apos;s position&quot;.</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>$ git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:WhiteDLee/data-science-blogs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">5. Multiplayer cooperation; Since having no demand to use this, stopping here. You can study though this [link](https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320)</span><br><span class="line"></span><br><span class="line">6. Push and delet tag version on Github</span><br></pre></td></tr></table></figure>
+<p>$ git push origin v1.0<br>$ git push origin –tags #push all tags<br>$ git tag -d v0.9 #delete in the local<br>$ git push origin :refs/tags/v0.9 # delete in the Github<br><code>`</code></p>
+<h1 id="Knowledge-of-Git"><a href="#Knowledge-of-Git" class="headerlink" title="Knowledge of Git"></a>Knowledge of Git</h1><ol>
+<li>The relationship between workspace and repository and the meaning of command “add” and “commit”, and “restore”. After executing “git add”, “Git” will put your edited files into stage (like cache) from workspace; after excuting “git commit”, “Git” will put your edited files into master from stage, as following; after excuting “git restore”, the file in the stage will substitute the file in the workspace and the file in the master will substitute the file in the stage.</li>
+</ol>
+<p><img src="/2021/02/21/Personal recordings/Personal instructions of Git/TheMeansOFAdd&amp;Commit.png" alt="The relationship between workspace and repository"><!-- .element width="50%/" --></p>
+<blockquote>
+<p><font color="red">Note:</font> the version storaged in the master by “commit” is not the version in the workspace but in stage.</p>
+</blockquote>
+<ol start="2">
+<li>Branch (useful for teamwork). Using a point to choose which branch you go.<br><img src="/2021/02/21/Personal recordings/Personal instructions of Git/GitBranch_diagram.png" alt="Diagram of Branch"><!-- .element width="50%/" --></li>
+</ol>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ol>
+<li><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    W-D-Lee
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/" title="Private instructions of Git">https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Instructions/" rel="tag"># Instructions</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/02/21/Personal recordings/Personal instructions of Linux operations/" rel="next" title="Private instructions of Linux operation">
+                <i class="fa fa-chevron-left"></i> Private instructions of Linux operation
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/02/21/Personal recordings/Personal instructions for windows/" rel="prev" title="Private instructions of Windows">
+                Private instructions of Windows <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/no_freedom.jpg"
+                alt="W-D-Lee" />
+            
+              <p class="site-author-name" itemprop="name">W-D-Lee</p>
+              <p class="site-description motion-element" itemprop="description">SLOTH GUY, SLOTH WORLD</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/whitedlee" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:white.d1.lee@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-info"><span class="nav-number">1.</span> <span class="nav-text">Basic info.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Use-it-by-Git-Bash"><span class="nav-number">2.</span> <span class="nav-text">Use it by Git Bash</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Use-it-by-“Git-Gui”"><span class="nav-number">3.</span> <span class="nav-text">Use it by “Git Gui”</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pull-your-code-to-Github"><span class="nav-number">4.</span> <span class="nav-text">Pull your code to Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Building-Connection-with-Github"><span class="nav-number">4.1.</span> <span class="nav-text">Building Connection with Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Knowledge-of-Git"><span class="nav-number">5.</span> <span class="nav-text">Knowledge of Git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">W-D-Lee</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('10');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>

@@ -125,7 +125,7 @@
 
 
 
-  <meta name="keywords" content="Instructions,Git," />
+  <meta name="keywords" content="Instructions,Linux," />
 
 
 
@@ -136,21 +136,18 @@
 
 
 
-<meta name="description" content="Recording some useful operations of Git.">
-<meta name="keywords" content="Instructions,Git">
+<meta name="description" content="Recording some useful operations of Linux operation.">
+<meta name="keywords" content="Instructions,Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Private instructions of Git">
-<meta property="og:url" content="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/index.html">
+<meta property="og:title" content="Private instructions of Linux operation">
+<meta property="og:url" content="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal_instructions_of_Linux operations/index.html">
 <meta property="og:site_name" content="SLOTH">
-<meta property="og:description" content="Recording some useful operations of Git.">
+<meta property="og:description" content="Recording some useful operations of Linux operation.">
 <meta property="og:locale" content="english">
-<meta property="og:image" content="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Personal%20instructions%20of%20Git/TheMeansOFAdd&Commit.png">
-<meta property="og:image" content="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Personal%20instructions%20of%20Git/GitBranch_diagram.png">
-<meta property="og:updated_time" content="2021-02-25T17:58:14.398Z">
+<meta property="og:updated_time" content="2021-02-25T18:04:36.668Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Private instructions of Git">
-<meta name="twitter:description" content="Recording some useful operations of Git.">
-<meta name="twitter:image" content="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Personal%20instructions%20of%20Git/TheMeansOFAdd&Commit.png">
+<meta name="twitter:title" content="Private instructions of Linux operation">
+<meta name="twitter:description" content="Recording some useful operations of Linux operation.">
 
 
 
@@ -180,13 +177,13 @@
 
 
 
-  <link rel="canonical" href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/"/>
+  <link rel="canonical" href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal_instructions_of_Linux operations/"/>
 
 
 
 
 
-  <title>Private instructions of Git | SLOTH</title>
+  <title>Private instructions of Linux operation | SLOTH</title>
   
 
 
@@ -373,7 +370,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Private instructions of Git</h1>
+          <h1 class="post-title" itemprop="name headline">Private instructions of Linux operation</h1>
         
 
         <div class="post-meta">
@@ -450,136 +447,12 @@
       
 
       
-        <p>Recording some useful operations of Git.</p>
+        <p>Recording some useful operations of Linux operation.</p>
 <a id="more"></a>
-<h1 id="Basic-info"><a href="#Basic-info" class="headerlink" title="Basic info."></a>Basic info.</h1><ol>
-<li>Download from “<a href="https://git-scm.com/“" target="_blank" rel="noopener">https://git-scm.com/“</a>;</li>
-</ol>
-<h1 id="Use-it-by-Git-Bash"><a href="#Use-it-by-Git-Bash" class="headerlink" title="Use it by Git Bash"></a>Use it by Git Bash</h1><ol>
-<li>Open “Git-&gt;Git Bash”, then a window popped up;</li>
-<li><p>Log in your Github account by</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Make one path as the repository that git can organize by</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Add a file (e.g. “readme.txt”) into the repository by</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Then tell the git which change you did by</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;wrote a read me file&quot;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p><font color="red">Note:</font> we can use “git –help” to find some instructions or “get help -commit” to find some detailed.</p>
-</blockquote>
-<blockquote>
-<p><font color="red">Note:</font> Git operations should be excuted in the repository path.</p>
-</blockquote>
-<ol start="6">
-<li><p>use “git status” to check whether the files in this repository has been changed, for example</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line">        modified:   readme.txt</span><br><span class="line"></span><br><span class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Show what changes have been done by “git diff” (from last add to now), for example:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$git diff readme.txt</span><br><span class="line">diff --git a/readme.txt b/readme.txt</span><br><span class="line">index d8036c1..d55a7b6 100644</span><br><span class="line">--- a/readme.txt</span><br><span class="line">+++ b/readme.txt</span><br><span class="line">@@ -1,2 +1,4 @@</span><br><span class="line"> Git is a version control system.</span><br><span class="line">+Git is free software.</span><br><span class="line">+Git is a distributed version control system.</span><br><span class="line"> Git is free software.</span><br><span class="line">\ No newline at end of file</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Show modify record by “git log”, which can show “Author”, “Date” and “uploaded commit words”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br><span class="line">commit f32d6c294fc38c0feeb860ba7fd024e9179a5c3d (HEAD -&gt; master)</span><br><span class="line">Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">Date:   Mon Feb 22 22:12:05 2021 +0800</span><br><span class="line"></span><br><span class="line">    add repeated words</span><br><span class="line"></span><br><span class="line">commit bc95568847ff2e3296d473b34670c21f1e523eb0</span><br><span class="line">Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">Date:   Mon Feb 22 22:08:43 2021 +0800</span><br><span class="line"></span><br><span class="line">    add distributed</span><br><span class="line"></span><br><span class="line">commit 0d868ea57e13c48f4f5d4df593897ec8a038a513</span><br><span class="line">Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">Date:   Mon Feb 22 21:30:54 2021 +0800</span><br><span class="line"></span><br><span class="line">    wrote a read me file</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Back to previous version by “git reset –hard head~1”, where “head~n” means back to last n version.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard head~1</span><br><span class="line">HEAD is now at bc95568 add distributed</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>If you want to back to one special version (even though the version you abandoned), you can use “git reset –hard f32d6”, where “f32d6” is the number of the version.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard f32d6</span><br><span class="line">HEAD is now at f32d6c2 add repeated words</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>If you forget the version num, you can use “git reflog” to see all version num</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line">f32d6c2 (HEAD -&gt; master) HEAD@&#123;0&#125;: reset: moving to f32d6</span><br><span class="line">bc95568 HEAD@&#123;1&#125;: reset: moving to head~1</span><br><span class="line">f32d6c2 (HEAD -&gt; master) HEAD@&#123;2&#125;: commit: add repeated words</span><br><span class="line">bc95568 HEAD@&#123;3&#125;: commit: add distributed</span><br><span class="line">0d868ea HEAD@&#123;4&#125;: commit (initial): wrote a read me file</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>discard changes in working directory by using “git restore”</p>
-</li>
-<li><p>delet files: </p>
-<blockquote>
-<p>“rm”: remove any files and can be used anywhere;<br>“git rm”: remove the files in the Git workspace and stage, and only be used in Git workspace.<br>“git rm –cached”: remove the files in the stage, and only be used in Git workspace.</p>
-</blockquote>
-</li>
-<li><p>establish branch by “git checkout -b”, where “-b” means “establish and switch”; or you finish it step by step, “git branch” and “git checkout”;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b dev (git switch -c dev)</span><br><span class="line">Switched to a new branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br><span class="line">$ git checkout/switch dev</span><br><span class="line">Switched to branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
-<ol start="15">
-<li><p>show all branches and current pointed branch by “git branch”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$git branch</span><br><span class="line">* dev</span><br><span class="line">  main</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>merge the branch with current branch. (at the same time, deleting the branch by “git merge –no-ff”)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git merge dev</span><br><span class="line">Updating dc46a9e..564e513</span><br><span class="line">Fast-forward</span><br><span class="line"> readme.txt | 1 +</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>delete branch</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d dev</span><br><span class="line">Deleted branch dev (was 564e513).</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>use “git stash” to store current working space; use “git stash list” to print all stored working space; use “git stash pop” to restore stored workspace.</p>
-</li>
-<li><p>use “git cherry-pick” to copy special changes.  </p>
-<blockquote>
-<p><font color="yellow"> Note:</font> I am not very clear about this commend.</p>
-</blockquote>
-</li>
-</ol>
-<ol start="20">
-<li>we can use “git log –graph” to see the branch graph.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">$ git log --graph</span><br><span class="line">*   commit f2c4e7eee97b36d077f182393381ebbfa0f5f686 (HEAD -&gt; main)</span><br><span class="line">|\  Merge: 79700e3 c25e138</span><br><span class="line">| | Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">| | Date:   Wed Feb 24 21:34:29 2021 +0800</span><br><span class="line">| |</span><br><span class="line">| |     merge dev</span><br><span class="line">| |</span><br><span class="line">| * commit c25e1387f18caeea8e6005161476b691779e9bc5</span><br><span class="line">| | Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">| | Date:   Wed Feb 24 21:31:02 2021 +0800</span><br><span class="line">| |</span><br><span class="line">| |     delete one line</span><br><span class="line">| |</span><br><span class="line">* | commit 79700e392d76f968b35a623587df8fb036d1f50a</span><br><span class="line">|/  Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">|   Date:   Wed Feb 24 21:32:01 2021 +0800</span><br><span class="line">|</span><br><span class="line">|       add one line</span><br><span class="line">|</span><br><span class="line">* commit 564e513cb2d7a9820f40971c76e54a5685d82dba</span><br><span class="line">| Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">| Date:   Wed Feb 24 21:23:27 2021 +0800</span><br><span class="line">|</span><br><span class="line">|     creat a branch</span><br><span class="line">|</span><br><span class="line">...skipping...</span><br><span class="line">* commit 0d868ea57e13c48f4f5d4df593897ec8a038a513</span><br><span class="line">  Author: WhiteDLee &lt;White.D1.Lee@gmail.com&gt;</span><br><span class="line">  Date:   Mon Feb 22 21:30:54 2021 +0800</span><br><span class="line"></span><br><span class="line">      wrote a read me file</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p><font color="red">Note:</font> we can use “git rebase” to comb branch graph log.</p>
-</blockquote>
-<ol start="21">
-<li><p>tag. Actually, it is adding a point with “tag name” into certain “commit”.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git tag v0.0</span><br><span class="line">$ git tag v0.9 f52c633</span><br><span class="line">$ git tag -d v0.0</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ignore some special types of file, which will not be orgonized by “Git”. The method is downloading relative “.gitignore” file according to your demand in the <a href="&quot;https://github.com/github/gitignore&quot;">link</a> or establish your own ignore list (guiding by the <a href="https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208" target="_blank" rel="noopener">link</a>). Then add this file into the repository.</p>
-</li>
-<li><p>configure alias and build Git server, please see the <a href="https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424" target="_blank" rel="noopener">link</a></p>
-</li>
-</ol>
-<h1 id="Use-it-by-“Git-Gui”"><a href="#Use-it-by-“Git-Gui”" class="headerlink" title="Use it by “Git Gui”"></a>Use it by “Git Gui”</h1><ol>
-<li>Show modify record: “Repository-&gt;Visualize master’s history”.</li>
-</ol>
-<h1 id="Pull-your-code-to-Github"><a href="#Pull-your-code-to-Github" class="headerlink" title="Pull your code to Github"></a>Pull your code to Github</h1><h2 id="Building-Connection-with-Github"><a href="#Building-Connection-with-Github" class="headerlink" title="Building Connection with Github"></a>Building Connection with Github</h2><ol>
-<li><p>Generate SSH-Key as folowing. (omit it if you have SSH-Key) Then you will get two files, “id_rsa” and “id_rsa.pub”; Next, you will upload the public key, “id_rsa.pub”, to Github and use private key, “id_ rsa”, to log in remotely.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot; -b 2048</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Upload the public key, “id_rsa.pub”, to the Github.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Account-&gt;settings-&gt;SSH and GPG keys-&gt;New SSH key</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Build repository in Github and push local data into the Github. After build new repository, you will get the guide how to push your local data, like the following, which means push local version on main branch to the remote version on origin branch.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin https://github.com/WhiteDLee/Git.git</span><br><span class="line">$ git branch -M main</span><br><span class="line">$ git push -u origin main</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p><font color="red"> Note:</font> in the last command, “-u” means push all data. In the future, you can upload updated data by using “git push origin main”.</p>
-</blockquote>
-<ol start="4">
-<li><p>Build repository in Github and clone to the local. “$ git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>: repository’s position”.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git@github.com:WhiteDLee/data-science-blogs</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Multiplayer cooperation; Since having no demand to use this, stopping here. You can study though this <a href="https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320" target="_blank" rel="noopener">link</a></p>
-</li>
-<li><p>Push and delet tag version on Github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin v1.0</span><br><span class="line">$ git push origin --tags #push all tags</span><br><span class="line">$ git tag -d v0.9 #delete in the local</span><br><span class="line">$ git push origin :refs/tags/v0.9 # delete in the Github</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h1 id="Knowledge-of-Git"><a href="#Knowledge-of-Git" class="headerlink" title="Knowledge of Git"></a>Knowledge of Git</h1><ol>
-<li>The relationship between workspace and repository and the meaning of command “add” and “commit”, and “restore”. After executing “git add”, “Git” will put your edited files into stage (like cache) from workspace; after excuting “git commit”, “Git” will put your edited files into master from stage, as following; after excuting “git restore”, the file in the stage will substitute the file in the workspace and the file in the master will substitute the file in the stage.</li>
-</ol>
-<p><img src="/2021/02/21/Personal recordings/Personal instructions of Git/TheMeansOFAdd&amp;Commit.png" alt="The relationship between workspace and repository"><!-- .element width="50%/" --></p>
-<blockquote>
-<p><font color="red">Note:</font> the version storaged in the master by “commit” is not the version in the workspace but in stage.</p>
-</blockquote>
-<ol start="2">
-<li>Branch (useful for teamwork). Using a point to choose which branch you go.<br><img src="/2021/02/21/Personal recordings/Personal instructions of Git/GitBranch_diagram.png" alt="Diagram of Branch"><!-- .element width="50%/" --></li>
-</ol>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ol>
-<li><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a></li>
+<h1 id="Basic-operations"><a href="#Basic-operations" class="headerlink" title="Basic operations"></a>Basic operations</h1><ol>
+<li>“pwd”: print current path;</li>
+<li>“ls- ah”: show hidden files; (use “ls –help” to find other related operations)</li>
+<li>“cat (concatenate)”: print content in the file; if the file doesn’t exist, the file with you typed in will be generated.</li>
 </ol>
 
       
@@ -601,7 +474,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/" title="Private instructions of Git">https://whitedlee.github.io/2021/02/21/Personal recordings/Personal instructions of Git/</a>
+    <a href="https://whitedlee.github.io/2021/02/21/Personal recordings/Personal_instructions_of_Linux operations/" title="Private instructions of Linux operation">https://whitedlee.github.io/2021/02/21/Personal recordings/Personal_instructions_of_Linux operations/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -618,7 +491,7 @@
           
             <a href="../../../../../tags/Instructions/" rel="tag"># Instructions</a>
           
-            <a href="../../../../../tags/Git/" rel="tag"># Git</a>
+            <a href="../../../../../tags/Linux/" rel="tag"># Linux</a>
           
         </div>
       
@@ -631,8 +504,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="../Personal instructions of Linux operations/" rel="next" title="Private instructions of Linux operation">
-                <i class="fa fa-chevron-left"></i> Private instructions of Linux operation
+              <a href="../../../../../2018/07/05/李宏毅-机器学习/李宏毅-机器学习/" rel="next" title="李宏毅-机器学习">
+                <i class="fa fa-chevron-left"></i> 李宏毅-机器学习
               </a>
             
           </div>
@@ -641,7 +514,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="../Personal instructions for windows/" rel="prev" title="Private instructions of Windows">
+              <a href="../Personal_instructions_for_windows/" rel="prev" title="Private instructions of Windows">
                 Private instructions of Windows <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -798,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-info"><span class="nav-number">1.</span> <span class="nav-text">Basic info.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Use-it-by-Git-Bash"><span class="nav-number">2.</span> <span class="nav-text">Use it by Git Bash</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Use-it-by-“Git-Gui”"><span class="nav-number">3.</span> <span class="nav-text">Use it by “Git Gui”</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pull-your-code-to-Github"><span class="nav-number">4.</span> <span class="nav-text">Pull your code to Github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Building-Connection-with-Github"><span class="nav-number">4.1.</span> <span class="nav-text">Building Connection with Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Knowledge-of-Git"><span class="nav-number">5.</span> <span class="nav-text">Knowledge of Git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-operations"><span class="nav-number">1.</span> <span class="nav-text">Basic operations</span></a></li></ol></div>
             
 
           </div>

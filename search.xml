@@ -13,18 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Application install and basis usage knowledge]]></title>
-    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FInstall_and_basis_usage_knowledge%2F</url>
-    <content type="text"><![CDATA[Recording some install methods of applications and their basis usage way. HEXOUsing HEXO to deploy blog. install Install12npm install -g hexo-cli # hexonpm install hexo-deployer-git --save # deploy to the remote. Usage Generate in the local 1hexo generate # or hexo g Show in the local 1hexo generate # hexo g Deploy in the remote 1hexo deploy # hexo d NOTE: this command should be executed in the blog file. Problem TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object12Reason: too much high version of Node.Solution: reinstall Node.js with version v12]]></content>
-      <categories>
-        <category>Instructions</category>
-      </categories>
-      <tags>
-        <tag>Instructions</tag>
-        <tag>Application</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Private instructions of Markdown]]></title>
     <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FPersonal_instruction_of_Markdown%2F</url>
     <content type="text"><![CDATA[Recording some useful operations of Markdown. Basic operation Block 1234Method:&lt;!-- ``` --&gt;This is a block&lt;!-- ``` --&gt; Blockquote 123&gt; you can add two spaces in the end to change lines. &gt; this is blockquote&gt;&gt; this is secondary blockquote you can add two spaces in the end to change lines.this is blockquote this is secondary blockquote Size, fond, color of word123&lt;font face=&quot;Times New Roman&quot;&gt;This is Times New Roman&lt;/font&gt; &lt;font color=red&gt;This is read&lt;/font&gt;&lt;font size=&quot;1&quot;&gt; This is my text number1&lt;/font&gt; This is Times New RomanThis is read This is my text number1 image123![drawing](./Personal_instruction_of_Markdown/TheMeansOFAdd&amp;Commit.png)&lt;img src=&quot;./Personal_instruction_of_Markdown/TheMeansOFAdd&amp;Commit.png&quot; width=&quot;.5/textwidth&quot;&gt; link1[This is a link](https://whitedlee.github.io/) This is a link]]></content>
@@ -34,6 +22,18 @@
       <tags>
         <tag>Instructions</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Application install and basis usage knowledge]]></title>
+    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FInstall_and_basis_usage_knowledge%2F</url>
+    <content type="text"><![CDATA[Recording some install methods of applications and their basis usage way. HEXOUsing HEXO to deploy blog. install Install12npm install -g hexo-cli # hexonpm install hexo-deployer-git --save # deploy to the remote. Usage Generate in the local 1hexo generate # or hexo g Show in the local 1hexo generate # hexo g Deploy in the remote 1hexo deploy # hexo d NOTE: this command should be executed in the blog file. Problem TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object12Reason: too much high version of Node.Solution: reinstall Node.js with version v12]]></content>
+      <categories>
+        <category>Instructions</category>
+      </categories>
+      <tags>
+        <tag>Instructions</tag>
+        <tag>Application</tag>
       </tags>
   </entry>
   <entry>

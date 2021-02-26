@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="english">
+<html class="theme-next gemini use-motion" lang="english">
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="SLOTH">
 <meta property="og:description" content="Recording some install methods of applications and their basis usage way.">
 <meta property="og:locale" content="english">
-<meta property="og:updated_time" content="2021-02-25T18:03:35.602Z">
+<meta property="og:updated_time" content="2021-02-26T03:55:22.137Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Application install and basis usage knowledge">
 <meta name="twitter:description" content="Recording some install methods of applications and their basis usage way.">
@@ -155,9 +155,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -374,6 +374,11 @@
         
 
         <div class="post-meta">
+           
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>TOP</font>
+            <span class="post-meta-divider">|</span>
+          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -433,6 +438,10 @@
           
 
           
+              <div class="post-description">
+                  Recording some install methods of applications and their basis usage way.
+              </div>
+          
 
         </div>
       </header>
@@ -447,14 +456,13 @@
       
 
       
-        <p>Recording some install methods of applications and their basis usage way.</p>
-<a id="more"></a>
+        <a id="more"></a>
 <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1><p>Using <a href="https://hexo.io/" target="_blank" rel="noopener">HEXO</a> to deploy blog.</p>
-<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><ol>
+<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><ul>
 <li>Install<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli # hexo</span><br><span class="line">npm install hexo-deployer-git --save # deploy to the remote.</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ol>
+</ul>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ul>
 <li><p>Generate in the local</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate # or hexo g</span><br></pre></td></tr></table></figure>
 </li>
@@ -464,13 +472,40 @@
 <li><p>Deploy in the remote</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy # hexo d</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
+</ul>
 <blockquote>
 <p><font color="red">NOTE:</font> this command should be executed in the blog file.</p>
 </blockquote>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ol>
-<li>TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Reason: too much high version of Node.</span><br><span class="line">Solution: reinstall Node.js with version v12</span><br></pre></td></tr></table></figure></li>
-</ol>
+<ul>
+<li><p>Top posts</p>
+<ul>
+<li><p>install new index generate tool</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall hexo-generator-index --save</span><br><span class="line">$ npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>add top tag in the file</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> 	title: hexo+GitHub</span><br><span class="line">date: 2017-09-08 12:00:25</span><br><span class="line">categories: </span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>add top Logo in the website: open “/blog/themes/next/layout/_macro/post.swig” and find “&lt;div class=”post-meta”>“, then add something like this.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;post-meta&quot;&gt;</span><br><span class="line">	&#123;% if post.top %&#125; </span><br><span class="line">	&lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">	&lt;font color=7D26CD&gt;TOP&lt;/font&gt;</span><br><span class="line">	&lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">	&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add “recommend” link under in overview sidebar. Configure the “_config.yml”file. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> # Blog rolls</span><br><span class="line">links_icon: link</span><br><span class="line">links_title: Recommended</span><br><span class="line"># links_layout: block</span><br><span class="line">links_layout: inline</span><br><span class="line">links:</span><br><span class="line">Waiting Change: https://whitedlee.github.io/2021/02/21/Personal%20recordings/Install_and_basis_usage_knowledge/</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul>
+<li><p>TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Reason: too much high version of Node.</span><br><span class="line">Solution: reinstall Node.js with version v12</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Problem “Customize whether the text will jump to the content below “read more” after click “read more””</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">description: &quot;just add description here&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></li>
+<li><a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">https://www.jianshu.com/p/9f0e90cc32c2</a></li>
+</ul>
 
       
     </div>
@@ -521,8 +556,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/02/21/Personal recordings/Personal_instructions_for_windows/" rel="next" title="Private instructions of Windows">
-                <i class="fa fa-chevron-left"></i> Private instructions of Windows
+              <a href="/2021/02/21/Personal recordings/Personal_instruction_of_Markdown/" rel="next" title="Private instructions of Markdown">
+                <i class="fa fa-chevron-left"></i> Private instructions of Markdown
               </a>
             
           </div>
@@ -531,8 +566,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/02/21/Personal recordings/Personal_instruction_of_Markdown/" rel="prev" title="Private instructions of Markdown">
-                Private instructions of Markdown <i class="fa fa-chevron-right"></i>
+              <a href="/2021/02/21/Personal recordings/Personal_instruction_of_LaTeX/" rel="prev" title="Private instructions of LaTeX">
+                Private instructions of LaTeX <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -664,6 +699,12 @@
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://sites.google.com/view/libowen/homepage" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
             </div>
           
 
@@ -671,6 +712,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Recommended
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://whitedlee.github.io/2021/02/21/Personal%20recordings/Install_and_basis_usage_knowledge/" title="Waiting Change" target="_blank">Waiting Change</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -688,7 +743,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO"><span class="nav-number">1.</span> <span class="nav-text">HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.3.</span> <span class="nav-text">Problem</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO"><span class="nav-number">1.</span> <span class="nav-text">HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.3.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.4.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -696,6 +751,13 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -726,7 +788,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -764,13 +826,6 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
-    
 
     
 
@@ -794,8 +849,6 @@
 
   
 
-
-  
 
 
 
@@ -837,11 +890,6 @@
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
 
   
 
@@ -854,6 +902,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>

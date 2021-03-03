@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="SLOTH">
 <meta property="og:description" content="Recording some install methods of applications and their basis usage way.">
 <meta property="og:locale" content="english">
-<meta property="og:updated_time" content="2021-02-26T03:55:22.137Z">
+<meta property="og:updated_time" content="2021-03-03T17:00:12.759Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Application install and basis usage knowledge">
 <meta name="twitter:description" content="Recording some install methods of applications and their basis usage way.">
@@ -501,10 +501,31 @@
 <li><p>Problem “Customize whether the text will jump to the content below “read more” after click “read more””</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">description: &quot;just add description here&quot;</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>Problem “websites is different between the local and remote”</p>
+<ul>
+<li>Try to re-generate<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">  $ hexo clean</span><br><span class="line">  $ hexo d -g</span><br><span class="line">  ``` </span><br><span class="line">  * Try to re-free the cache of browser by &quot;ctrl+F5&quot;</span><br><span class="line"></span><br><span class="line">## Reference</span><br><span class="line"></span><br><span class="line">* https://hexo.io/</span><br><span class="line">* https://www.jianshu.com/p/9f0e90cc32c2</span><br><span class="line"></span><br><span class="line"># docker</span><br><span class="line"></span><br><span class="line">Using [docker](https://www.docker.com/) to install enviroments and run some codings. we can find some images in [docker hub](https://hub.docker.com/search?q=&amp;type=image).</span><br><span class="line"></span><br><span class="line">## Basic operations</span><br><span class="line"></span><br><span class="line">### volume</span><br><span class="line"></span><br><span class="line">* &quot;docker volume create&quot;: create a volume</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
-<li><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></li>
-<li><a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">https://www.jianshu.com/p/9f0e90cc32c2</a></li>
+</li>
+</ul>
+<p>docker volume create my-vol<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* &quot;docker volume ls&quot;: show all volumes</span><br><span class="line"></span><br><span class="line">* &quot;docker volume inspect my-vol&quot;: show the detail info. of volume my-vol.</span><br></pre></td></tr></table></figure></p>
+<p>C:\Users\white&gt;docker volume inspect my-vol<br>[<br>    {<br>        “CreatedAt”: “2021-03-03T12:41:29Z”,<br>        “Driver”: “local”,<br>        “Labels”: {},<br>        “Mountpoint”: “/var/lib/docker/volumes/my-vol/_data”,<br>        “Name”: “my-vol”,<br>        “Options”: {},<br>        “Scope”: “local”<br>    }<br>]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* &quot;docker volume rm my-vol&quot;: delete a volume.</span><br><span class="line"></span><br><span class="line">### Docker compose</span><br><span class="line"></span><br><span class="line">* Firstly, we need a &quot;docker-compose.yml&quot; file</span><br><span class="line"></span><br><span class="line">* Then, excute &quot;docker-compose up (-d)&quot;, where &quot;docker-compose up&quot; means run the procedure based on &quot;docker-compose.yml&quot;, adding &quot;-d&quot; means running in the background.</span><br><span class="line"></span><br><span class="line">* End the procedure by</span><br></pre></td></tr></table></figure></p>
+<p>docker stop $(docker ps -a -q)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># Quantaxis</span><br><span class="line"></span><br><span class="line">[Quantaxis](https://github.com/QUANTAXIS/QUANTAXIS) is a tool to monitor stock. We can take communications with other through [platform](http://www.yutiansut.com:3000/) and find some instruction in [documents](https://doc.yutiansut.com/).</span><br><span class="line"></span><br><span class="line">## QAStrategy</span><br><span class="line"></span><br><span class="line">[QAStrategy](https://github.com/yutiansut/QAStrategy) is a basic model of Quantaxis, which can deploy through docker. The instruction is [here](https://doc.yutiansut.com/docker) and [here](http://www.yutiansut.com:3000/topic/603a0a3121eaa9545bbb3643)</span><br><span class="line"></span><br><span class="line">* Download the &quot;docker-compose.yml&quot; file of Quantaxis</span><br><span class="line"></span><br><span class="line">* Upgrade &quot;docker-compose.yml&quot; by &quot;docker-compose pull&quot;</span><br><span class="line"></span><br><span class="line">* Establish the volumes</span><br></pre></td></tr></table></figure></p>
+<p>docker volume create qamg<br>docker volume create qacode<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* Run the QUANTAIS service by excuting &quot;docker-compose up -d&quot;.</span><br><span class="line"></span><br><span class="line">* Open the 8888 port by &quot;127.0.0.1:8888&quot; to save stock_list. (password is &quot;quanatxis&quot;)</span><br><span class="line"></span><br><span class="line">* click the terminal and type &quot;bash&quot;, &quot;quantaxis&quot;, &quot;save stock_list&quot;</span><br></pre></td></tr></table></figure></p>
+<h1 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h1><p>(base) root@d5196673cbe0:/home# quantaxis<br>jqdatasdk not installed<br>you are using non-interactive mdoel quantaxis<br>QUANTAXIS&gt; save stock_list<br><code>`</code></p>
+<ul>
+<li><p>restart the “qaweb” in the docker.</p>
+</li>
+<li><p>Important ports</p>
+<ul>
+<li>27017 mongodb</li>
+<li>8888 jupyter</li>
+<li>8010 quantaxis_webserver</li>
+<li>81 quantaxis_community 社区版界面</li>
+<li>61208 系统监控</li>
+<li>15672 qa-eventmq</li>
+</ul>
+</li>
 </ul>
 
       
@@ -556,8 +577,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/02/21/Personal recordings/Personal_instruction_of_Markdown/" rel="next" title="Private instructions of Markdown">
-                <i class="fa fa-chevron-left"></i> Private instructions of Markdown
+              <a href="/2021/02/21/Personal recordings/Personal_instruction_of_LaTeX/" rel="next" title="Private instructions of LaTeX">
+                <i class="fa fa-chevron-left"></i> Private instructions of LaTeX
               </a>
             
           </div>
@@ -565,10 +586,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/02/21/Personal recordings/Personal_instruction_of_LaTeX/" rel="prev" title="Private instructions of LaTeX">
-                Private instructions of LaTeX <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -743,7 +760,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO"><span class="nav-number">1.</span> <span class="nav-text">HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.3.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.4.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO"><span class="nav-number">1.</span> <span class="nav-text">HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.3.</span> <span class="nav-text">Problem</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#bash"><span class="nav-number">2.</span> <span class="nav-text">bash</span></a></li></ol></div>
             
 
           </div>

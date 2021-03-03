@@ -454,7 +454,7 @@
       
         <a href="https://www.youtube.com/playlist?list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49" title="[external] [超链接]" target="_blank" rel="noopener">“李宏毅机器学习课程”</a>学习笔记。<br><br><a id="more"></a>
 <h1 id="Part-0-1-Introduction-of-Machine-Learning"><a href="#Part-0-1-Introduction-of-Machine-Learning" class="headerlink" title="Part 0-1: Introduction of Machine Learning"></a>Part 0-1: Introduction of Machine Learning</h1><h2 id="机器学习的简要工作原理"><a href="#机器学习的简要工作原理" class="headerlink" title="机器学习的简要工作原理"></a>机器学习的简要工作原理</h2><p>机器学习的工作主要可以分为“training（or learning）” 和“Test”两个部分；其中“training”的目的是训练一个模型，而“Test”则是利用训练好的模型进行实际测试，以判断模型的优劣。具体工作模式如下图所示：</p>
-<p><img src="1-1机器学习步骤.png" width="90%" height="90%" title="图1-1：机器学习简要工作原理" id="1-1"></p>
+<p><img src="/2018/07/05/李宏毅-机器学习/李宏毅-机器学习/1-1机器学习步骤.png" width="90%" height="90%" title="图1-1：机器学习简要工作原理" id="1-1"></p>
 <p><strong>“Training”</strong>从架构逻辑上来讲是构造一个模型，但从数学角度上来说仅仅是寻找一个函数(function)罢了，通过这个函数能够把输入的数据(图片、声音···)映射成一组向量，寻找合适的函数使得映射出的向量能够反映输入数据的属性，则完成了训练。例如：在二分类问题中：判别输入的图片是猫还是狗，数据进过函数映射后，得到的就是一个二维的向量$y_1,y_2$，其中$y_1$代表输入图片是猫的可能性，$y_2$代表输入图片是狗的可能性，很明显这组向量就能够反映我们的需求(猫狗鉴别)。<strong>“Test”</strong>则是利用训练好的函数对未知的数据进行测试(或者说应用)，将数据映射为向量，以实现数据属性的分辨。</p>
 <p>假设我们有两组数据 $Set_1= \{ a_1, a_2, \ldots, a_M\}$ 和 $Set_2=\{ b_1, b_2, \ldots, b_N\}$ 分别作为训练集和测试集。 首先<strong>Training</strong>，我们的目的是寻找一个函数，所以首先构造一个function set $F=\{f_1, \ldots, f_N\}$ ($N$有可能趋于无穷大)，每一个元素$f_n$都能对输入数据进行映射，输出一组向量 $y_i=f_n\left( a_i \right)$；然而每一个function映射出来的效果不尽相同，机器必须得能够进行比较不同function的效果；并且由于function太多了，我们不可能一个一个的去比较哪个是最好的function，所以需要一个好的演算法加快寻找最优function的速度，记最优function为$f^*$。最后在利用function$f^*$在测试集上$Set_2$进行训练。</p>
 <p>总的来说，构建机器学习模型主要分为三个部分：</p>
@@ -475,7 +475,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="1-2概述.png" width="90%" height="90%" title="图1-2：机器学习简要分类" id="1-2"></p>
+<p><img src="/2018/07/05/李宏毅-机器学习/李宏毅-机器学习/1-2概述.png" width="90%" height="90%" title="图1-2：机器学习简要分类" id="1-2"></p>
 <h1 id="part-0-2-Why-we-need-to-learn-machine-learning"><a href="#part-0-2-Why-we-need-to-learn-machine-learning" class="headerlink" title="part 0-2: Why we need to learn machine learning?"></a>part 0-2: Why we need to learn machine learning?</h1><p>在未来AI技术会取代很多工作，但是新的职业也同样会诞生，例如AI训练师。人工智能在现在依然有很多地方需要人工的力量，例如：</p>
 <ul>
 <li>挑选合适的model和loss function</li>
@@ -491,7 +491,7 @@
 <li>体重$x_w$：11.62</li>
 <li>身高$x_h$：0.88</li>
 </ul>
-<p>我们的目标是找到一个函数，当将这些属性输入后能够得到进化后的CP值<br><img src="2-1妙蛙种子.png" width="90%" height="90%" title="图2-1：妙蛙种子属性卡" id="2-1"></p>
+<p>我们的目标是找到一个函数，当将这些属性输入后能够得到进化后的CP值<br><img src="/2018/07/05/李宏毅-机器学习/李宏毅-机器学习/2-1妙蛙种子.png" width="90%" height="90%" title="图2-1：妙蛙种子属性卡" id="2-1"></p>
 <blockquote>
 <p>数据源于：</p>
 </blockquote>
@@ -562,8 +562,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/02/21/Personal recordings/Personal_instructions_of_Linux operations/" rel="prev" title="Private instructions of Linux operation">
-                Private instructions of Linux operation <i class="fa fa-chevron-right"></i>
+              <a href="/2021/02/21/Personal recordings/Personal_instructions_of_Git/" rel="prev" title="Private instructions of Git">
+                Private instructions of Git <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

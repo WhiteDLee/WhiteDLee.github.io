@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Application install and basis usage knowledge]]></title>
-    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FInstall_and_basis_usage_knowledge%2F</url>
-    <content type="text"><![CDATA[HEXOUsing HEXO to deploy blog. install Install12npm install -g hexo-cli # hexonpm install hexo-deployer-git --save # deploy to the remote. Usage Generate in the local 1hexo generate # or hexo g Show in the local 1hexo generate # hexo g Deploy in the remote 1hexo deploy # hexo d NOTE: this command should be executed in the blog file. Top posts install new index generate tool 12$ npm uninstall hexo-generator-index --save$ npm install hexo-generator-index-pin-top --save add top tag in the file 1234 title: hexo+GitHubdate: 2017-09-08 12:00:25categories: top: true add top Logo in the website: open “/blog/themes/next/layout/_macro/post.swig” and find “&lt;div class=”post-meta”>“, then add something like this. 123456&lt;div class=&quot;post-meta&quot;&gt; &#123;% if post.top %&#125; &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt; &lt;font color=7D26CD&gt;TOP&lt;/font&gt; &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt; &#123;% endif %&#125; Add “recommend” link under in overview sidebar. Configure the “_config.yml”file. 1234567 # Blog rollslinks_icon: linklinks_title: Recommended# links_layout: blocklinks_layout: inlinelinks:Waiting Change: https://whitedlee.github.io/2021/02/21/Personal%20recordings/Install_and_basis_usage_knowledge/ Problem TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object 12Reason: too much high version of Node.Solution: reinstall Node.js with version v12 Problem “Customize whether the text will jump to the content below “read more” after click “read more”” 1description: &quot;just add description here&quot; Problem “websites is different between the local and remote” Try to re-generate12345678910111213141516171819 $ hexo clean $ hexo d -g ``` * Try to re-free the cache of browser by &quot;ctrl+F5&quot;## Reference* https://hexo.io/* https://www.jianshu.com/p/9f0e90cc32c2# dockerUsing [docker](https://www.docker.com/) to install enviroments and run some codings. we can find some images in [docker hub](https://hub.docker.com/search?q=&amp;type=image).## Basic operations### volume* &quot;docker volume create&quot;: create a volume docker volume create my-vol1234* &quot;docker volume ls&quot;: show all volumes* &quot;docker volume inspect my-vol&quot;: show the detail info. of volume my-vol. C:\Users\white&gt;docker volume inspect my-vol[ { “CreatedAt”: “2021-03-03T12:41:29Z”, “Driver”: “local”, “Labels”: {}, “Mountpoint”: “/var/lib/docker/volumes/my-vol/_data”, “Name”: “my-vol”, “Options”: {}, “Scope”: “local” }]12345678910* &quot;docker volume rm my-vol&quot;: delete a volume.### Docker compose* Firstly, we need a &quot;docker-compose.yml&quot; file* Then, excute &quot;docker-compose up (-d)&quot;, where &quot;docker-compose up&quot; means run the procedure based on &quot;docker-compose.yml&quot;, adding &quot;-d&quot; means running in the background.* End the procedure by docker stop $(docker ps -a -q)1234567891011121314# Quantaxis[Quantaxis](https://github.com/QUANTAXIS/QUANTAXIS) is a tool to monitor stock. We can take communications with other through [platform](http://www.yutiansut.com:3000/) and find some instruction in [documents](https://doc.yutiansut.com/).## QAStrategy[QAStrategy](https://github.com/yutiansut/QAStrategy) is a basic model of Quantaxis, which can deploy through docker. The instruction is [here](https://doc.yutiansut.com/docker) and [here](http://www.yutiansut.com:3000/topic/603a0a3121eaa9545bbb3643)* Download the &quot;docker-compose.yml&quot; file of Quantaxis* Upgrade &quot;docker-compose.yml&quot; by &quot;docker-compose pull&quot;* Establish the volumes docker volume create qamgdocker volume create qacode123456* Run the QUANTAIS service by excuting &quot;docker-compose up -d&quot;.* Open the 8888 port by &quot;127.0.0.1:8888&quot; to save stock_list. (password is &quot;quanatxis&quot;)* click the terminal and type &quot;bash&quot;, &quot;quantaxis&quot;, &quot;save stock_list&quot; bash(base) root@d5196673cbe0:/home# quantaxisjqdatasdk not installedyou are using non-interactive mdoel quantaxisQUANTAXIS&gt; save stock_list` restart the “qaweb” in the docker. Important ports 27017 mongodb 8888 jupyter 8010 quantaxis_webserver 81 quantaxis_community 社区版界面 61208 系统监控 15672 qa-eventmq]]></content>
-      <categories>
-        <category>Instructions</category>
-      </categories>
-      <tags>
-        <tag>Instructions</tag>
-        <tag>Application</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Private instructions of LaTeX]]></title>
     <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FPersonal_instruction_of_LaTeX%2F</url>
     <content type="text"><![CDATA[]]></content>
@@ -22,18 +10,6 @@
       <tags>
         <tag>Instructions</tag>
         <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Private instructions of Markdown]]></title>
-    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FPersonal_instruction_of_Markdown%2F</url>
-    <content type="text"><![CDATA[Basic operation Block 1234Method:&lt;!-- ``` --&gt;This is a block&lt;!-- ``` --&gt; Blockquote 123&gt; you can add two spaces in the end to change lines. &gt; this is blockquote&gt;&gt; this is secondary blockquote you can add two spaces in the end to change lines.this is blockquote this is secondary blockquote Size, fond, color of word123&lt;font face=&quot;Times New Roman&quot;&gt;This is Times New Roman&lt;/font&gt; &lt;font color=red&gt;This is read&lt;/font&gt;&lt;font size=&quot;1&quot;&gt; This is my text number1&lt;/font&gt; This is Times New RomanThis is read This is my text number1 image123![drawing](./Personal_instruction_of_Markdown/TheMeansOFAdd&amp;Commit.png)&lt;img src=&quot;./Personal_instruction_of_Markdown/TheMeansOFAdd&amp;Commit.png&quot; width=&quot;.5/textwidth&quot;&gt; link1[This is a link](https://whitedlee.github.io/) This is a link]]></content>
-      <categories>
-        <category>Instructions</category>
-      </categories>
-      <tags>
-        <tag>Instructions</tag>
-        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -49,15 +25,27 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Private instructions of Linux operation]]></title>
-    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FPersonal_instructions_of_Linux%20operations%2F</url>
-    <content type="text"><![CDATA[Basic operations “pwd”: print current path; “ls- ah”: show hidden files; (use “ls –help” to find other related operations) “cat (concatenate)”: print content in the file; if the file doesn’t exist, the file with you typed in will be generated.]]></content>
+    <title><![CDATA[Private instructions of Markdown]]></title>
+    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FPersonal_instruction_of_Markdown%2F</url>
+    <content type="text"><![CDATA[Basic operation Block 1234Method:&lt;!-- ``` --&gt;This is a block&lt;!-- ``` --&gt; Blockquote 123&gt; you can add two spaces in the end to change lines. &gt; this is blockquote&gt;&gt; this is secondary blockquote you can add two spaces in the end to change lines.this is blockquote this is secondary blockquote Size, fond, color of word123&lt;font face=&quot;Times New Roman&quot;&gt;This is Times New Roman&lt;/font&gt; &lt;font color=red&gt;This is read&lt;/font&gt;&lt;font size=&quot;1&quot;&gt; This is my text number1&lt;/font&gt; This is Times New RomanThis is read This is my text number1 image123![drawing](./Personal_instruction_of_Markdown/TheMeansOFAdd&amp;Commit.png)&lt;img src=&quot;./Personal_instruction_of_Markdown/TheMeansOFAdd&amp;Commit.png&quot; width=&quot;.5/textwidth&quot;&gt; link1[This is a link](https://whitedlee.github.io/) This is a link]]></content>
       <categories>
         <category>Instructions</category>
       </categories>
       <tags>
         <tag>Instructions</tag>
-        <tag>Linux</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Application install and basis usage knowledge]]></title>
+    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FInstall_and_basis_usage_knowledge%2F</url>
+    <content type="text"><![CDATA[HEXOUsing HEXO to deploy blog. install Install12npm install -g hexo-cli # hexonpm install hexo-deployer-git --save # deploy to the remote. Usage Generate in the local 1hexo generate # or hexo g Show in the local 1hexo generate # hexo g Deploy in the remote 1hexo deploy # hexo d NOTE: this command should be executed in the blog file. Top posts install new index generate tool 12$ npm uninstall hexo-generator-index --save$ npm install hexo-generator-index-pin-top --save add top tag in the file 1234 title: hexo+GitHubdate: 2017-09-08 12:00:25categories: top: true add top Logo in the website: open “/blog/themes/next/layout/_macro/post.swig” and find “&lt;div class=”post-meta”>“, then add something like this. 123456&lt;div class=&quot;post-meta&quot;&gt; &#123;% if post.top %&#125; &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt; &lt;font color=7D26CD&gt;TOP&lt;/font&gt; &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt; &#123;% endif %&#125; Add “recommend” link under in overview sidebar. Configure the “_config.yml”file. 1234567 # Blog rollslinks_icon: linklinks_title: Recommended# links_layout: blocklinks_layout: inlinelinks:Waiting Change: https://whitedlee.github.io/2021/02/21/Personal%20recordings/Install_and_basis_usage_knowledge/ Problem TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object 12Reason: too much high version of Node.Solution: reinstall Node.js with version v12 Problem “Customize whether the text will jump to the content below “read more” after click “read more”” 1description: &quot;just add description here&quot; Problem “websites is different between the local and remote” Try to re-generate12345678910111213141516171819 $ hexo clean $ hexo d -g ``` * Try to re-free the cache of browser by &quot;ctrl+F5&quot;## Reference* https://hexo.io/* https://www.jianshu.com/p/9f0e90cc32c2# dockerUsing [docker](https://www.docker.com/) to install enviroments and run some codings. we can find some images in [docker hub](https://hub.docker.com/search?q=&amp;type=image).## Basic operations### volume* &quot;docker volume create&quot;: create a volume docker volume create my-vol1234* &quot;docker volume ls&quot;: show all volumes* &quot;docker volume inspect my-vol&quot;: show the detail info. of volume my-vol. C:\Users\white&gt;docker volume inspect my-vol[ { “CreatedAt”: “2021-03-03T12:41:29Z”, “Driver”: “local”, “Labels”: {}, “Mountpoint”: “/var/lib/docker/volumes/my-vol/_data”, “Name”: “my-vol”, “Options”: {}, “Scope”: “local” }]12345678910* &quot;docker volume rm my-vol&quot;: delete a volume.### Docker compose* Firstly, we need a &quot;docker-compose.yml&quot; file* Then, excute &quot;docker-compose up (-d)&quot;, where &quot;docker-compose up&quot; means run the procedure based on &quot;docker-compose.yml&quot;, adding &quot;-d&quot; means running in the background.* End the procedure by docker stop $(docker ps -a -q)1234567891011121314# Quantaxis[Quantaxis](https://github.com/QUANTAXIS/QUANTAXIS) is a tool to monitor stock. We can take communications with other through [platform](http://www.yutiansut.com:3000/) and find some instruction in [documents](https://doc.yutiansut.com/).## QAStrategy[QAStrategy](https://github.com/yutiansut/QAStrategy) is a basic model of Quantaxis, which can deploy through docker. The instruction is [here](https://doc.yutiansut.com/docker) and [here](http://www.yutiansut.com:3000/topic/603a0a3121eaa9545bbb3643)* Download the &quot;docker-compose.yml&quot; file of Quantaxis* Upgrade &quot;docker-compose.yml&quot; by &quot;docker-compose pull&quot;* Establish the volumes docker volume create qamgdocker volume create qacode123456* Run the QUANTAIS service by excuting &quot;docker-compose up -d&quot;.* Open the 8888 port by &quot;127.0.0.1:8888&quot; to save stock_list. (password is &quot;quanatxis&quot;)* click the terminal and type &quot;bash&quot;, &quot;quantaxis&quot;, &quot;save stock_list&quot; bash(base) root@d5196673cbe0:/home# quantaxisjqdatasdk not installedyou are using non-interactive mdoel quantaxisQUANTAXIS&gt; save stock_list` restart the “qaweb” in the docker. Important ports 27017 mongodb 8888 jupyter 8010 quantaxis_webserver 81 quantaxis_community 社区版界面 61208 系统监控 15672 qa-eventmq]]></content>
+      <categories>
+        <category>Instructions</category>
+      </categories>
+      <tags>
+        <tag>Instructions</tag>
+        <tag>Application</tag>
       </tags>
   </entry>
   <entry>
@@ -70,6 +58,18 @@
       <tags>
         <tag>Instructions</tag>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Private instructions of Linux operation]]></title>
+    <url>%2F2021%2F02%2F21%2FPersonal%20recordings%2FPersonal_instructions_of_Linux%20operations%2F</url>
+    <content type="text"><![CDATA[Basic operations “pwd”: print current path; “ls- ah”: show hidden files; (use “ls –help” to find other related operations) “cat (concatenate)”: print content in the file; if the file doesn’t exist, the file with you typed in will be generated.]]></content>
+      <categories>
+        <category>Instructions</category>
+      </categories>
+      <tags>
+        <tag>Instructions</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>

@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="SLOTH">
 <meta property="og:description" content="Recording some install methods of applications and their basis usage way.">
 <meta property="og:locale" content="english">
-<meta property="og:updated_time" content="2021-03-03T17:23:20.746Z">
+<meta property="og:updated_time" content="2021-03-10T13:03:44.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Application install and basis usage knowledge">
 <meta name="twitter:description" content="Recording some install methods of applications and their basis usage way.">
@@ -538,18 +538,24 @@
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop $(docker ps -a -q)</span><br></pre></td></tr></table></figure>
+<h3 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h3><ul>
+<li>Change the locations of docker image, <a href="https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2" target="_blank" rel="noopener">here</a>. The reason is <a href="https://cloud.tencent.com/developer/article/1679501" target="_blank" rel="noopener">here</a>.</li>
+</ul>
+<h3 id="Some-basic-knowledge"><a href="#Some-basic-knowledge" class="headerlink" title="Some basic knowledge"></a>Some basic knowledge</h3><ul>
+<li>The data downloaded in the docker procedure will not store in the cashe but the location of wsl.</li>
+</ul>
 <h1 id="Quantaxis"><a href="#Quantaxis" class="headerlink" title="Quantaxis"></a>Quantaxis</h1><p><a href="https://github.com/QUANTAXIS/QUANTAXIS" target="_blank" rel="noopener">Quantaxis</a> is a tool to monitor stock. We can take communications with other through <a href="http://www.yutiansut.com:3000/" target="_blank" rel="noopener">platform</a> and find some instruction in <a href="https://doc.yutiansut.com/" target="_blank" rel="noopener">documents</a>.</p>
 <h2 id="QAStrategy"><a href="#QAStrategy" class="headerlink" title="QAStrategy"></a>QAStrategy</h2><p><a href="https://github.com/yutiansut/QAStrategy" target="_blank" rel="noopener">QAStrategy</a> is a basic model of Quantaxis, which can deploy through docker. The instruction is <a href="https://doc.yutiansut.com/docker" target="_blank" rel="noopener">here</a> and <a href="http://www.yutiansut.com:3000/topic/603a0a3121eaa9545bbb3643" target="_blank" rel="noopener">here</a></p>
 <ul>
 <li><p>Download the “docker-compose.yml” file of Quantaxis</p>
-</li>
-<li><p>Upgrade “docker-compose.yml” by “docker-compose pull”</p>
 </li>
 <li><p>Establish the volumes</p>
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker volume create qamg</span><br><span class="line">docker volume create qacode</span><br></pre></td></tr></table></figure>
 <ul>
+<li><p>Upgrade “docker-compose.yml” by “docker-compose pull”</p>
+</li>
 <li><p>Run the QUANTAIS service by excuting “docker-compose up -d”.</p>
 </li>
 <li><p>Open the 8888 port by “127.0.0.1:8888” to save stock_list. (password is “quanatxis”)</p>
@@ -570,6 +576,17 @@
 <li>61208 system monitoring</li>
 <li>15672 qa-eventmq</li>
 </ul>
+</li>
+</ul>
+<h1 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h1><h2 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h2><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><ul>
+<li>Download extension “LaTeX Workshop”</li>
+</ul>
+<h3 id="Problems-1"><a href="#Problems-1" class="headerlink" title="Problems"></a>Problems</h3><ul>
+<li>Sorry, but latexmk did not succeed for the following reason: MiKTeX could not find the script engine ‘perl.exe’ which is required to execute ‘latexmk’.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Download &quot;perl&quot; throuogh [here](https://www.perl.org/).</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="Mathtype"><a href="#Mathtype" class="headerlink" title="Mathtype"></a>Mathtype</h1><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ul>
+<li>Adding mathtype in Mircosoft Word and Power Point. Please see <a href="https://www.mathtype.cn/wenti/jianrong-2016.html" target="_blank" rel="noopener">here</a>.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Find &quot;MathType Commands 6 For Word 2013&quot; and &quot;WordCmds&quot; in &quot;MathType\Office Support\64&quot;, and &quot;MathPage.wll&quot; in &quot;MathType\MathPage\64&quot;, then add them in &quot;\root\Office16\STARTUP&quot;.</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
@@ -805,7 +822,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO"><span class="nav-number">1.</span> <span class="nav-text">HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.3.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.4.</span> <span class="nav-text">Reference</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker"><span class="nav-number">2.</span> <span class="nav-text">docker</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-operations"><span class="nav-number">2.1.</span> <span class="nav-text">Basic operations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#volume"><span class="nav-number">2.1.1.</span> <span class="nav-text">volume</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-compose"><span class="nav-number">2.1.2.</span> <span class="nav-text">Docker compose</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Quantaxis"><span class="nav-number">3.</span> <span class="nav-text">Quantaxis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#QAStrategy"><span class="nav-number">3.1.</span> <span class="nav-text">QAStrategy</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO"><span class="nav-number">1.</span> <span class="nav-text">HEXO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.3.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.4.</span> <span class="nav-text">Reference</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker"><span class="nav-number">2.</span> <span class="nav-text">docker</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-operations"><span class="nav-number">2.1.</span> <span class="nav-text">Basic operations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#volume"><span class="nav-number">2.1.1.</span> <span class="nav-text">volume</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-compose"><span class="nav-number">2.1.2.</span> <span class="nav-text">Docker compose</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems"><span class="nav-number">2.1.3.</span> <span class="nav-text">Problems</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Some-basic-knowledge"><span class="nav-number">2.1.4.</span> <span class="nav-text">Some basic knowledge</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Quantaxis"><span class="nav-number">3.</span> <span class="nav-text">Quantaxis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#QAStrategy"><span class="nav-number">3.1.</span> <span class="nav-text">QAStrategy</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VS-Code"><span class="nav-number">4.</span> <span class="nav-text">VS Code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX"><span class="nav-number">4.1.</span> <span class="nav-text">LaTeX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install"><span class="nav-number">4.1.1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems-1"><span class="nav-number">4.1.2.</span> <span class="nav-text">Problems</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mathtype"><span class="nav-number">5.</span> <span class="nav-text">Mathtype</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">5.1.</span> <span class="nav-text">Installation</span></a></li></ol></li></ol></div>
             
 
           </div>

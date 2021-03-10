@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="SLOTH">
 <meta property="og:description" content="Recording some useful operations of LaTeX.">
 <meta property="og:locale" content="english">
-<meta property="og:updated_time" content="2021-02-26T02:57:08.611Z">
+<meta property="og:updated_time" content="2021-03-06T10:57:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Private instructions of LaTeX">
 <meta name="twitter:description" content="Recording some useful operations of LaTeX.">
@@ -453,7 +453,19 @@
 
       
         <a id="more"></a>
-
+<h1 id="Equations"><a href="#Equations" class="headerlink" title="Equations"></a>Equations</h1><h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><ul>
+<li>method 1<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">	\begin&#123;aligned&#125;</span><br><span class="line">	&amp; \underset&#123;t_1&#125;&#123;\text&#123;minimize&#125;&#125;</span><br><span class="line">	&amp; &amp; P\left(t_2 - t_1\right) \\</span><br><span class="line">	&amp; \text&#123;subject to&#125;</span><br><span class="line">	&amp; &amp; \int_&#123;t_1&#125;^&#123;t_2&#125; B \log \left(1+ \frac&#123;P dis\left(t\right)^&#123;-\alpha&#125;&#125;&#123;N_0B&#125;\right) \,dt = S,\\</span><br><span class="line">	&amp;&amp;&amp; t_2 \leq T_&#123;\max&#125;.</span><br><span class="line">	\end&#123;aligned&#125;</span><br><span class="line">	\label&#123;eqs:Optimization_Problem_for_minimizing_Power_Consuming&#125; </span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="others"><a href="#others" class="headerlink" title="others"></a>others</h1><h2 id="Footnotemark"><a href="#Footnotemark" class="headerlink" title="Footnotemark"></a>Footnotemark</h2><ul>
+<li>Add footnotemark by “\footnotetext[1]{text} “,</li>
+<li>Cite the footnotemark by \footnotemark.</li>
+</ul>
+<h1 id="Figure"><a href="#Figure" class="headerlink" title="Figure"></a>Figure</h1><h2 id="Adding-one-figure"><a href="#Adding-one-figure" class="headerlink" title="Adding one figure"></a>Adding one figure</h2><ul>
+<li>method 1:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;figure&#125;</span><br><span class="line">	\includegraphics[width=.4\linewidth]&#123;./Example.eps&#125;</span><br><span class="line">	\caption&#123;caption&#125;</span><br><span class="line">	\label&#123;fig:label&#125;</span><br><span class="line">\end&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="Colume"><a href="#Colume" class="headerlink" title="Colume"></a>Colume</h1><h2 id="Cut-the-colume-manually-mainly-used-in-slides-generating"><a href="#Cut-the-colume-manually-mainly-used-in-slides-generating" class="headerlink" title="Cut the colume manually (mainly used in slides generating)."></a>Cut the colume manually (mainly used in slides generating).</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;columns&#125;[c] % The &quot;c&quot; option specifies centered vertical alignment while the &quot;t&quot; option is used for top vertical alignment</span><br><span class="line"></span><br><span class="line">	\column&#123;.45\textwidth&#125; % Left column and width</span><br><span class="line">	some words or others;</span><br><span class="line"></span><br><span class="line">	\column&#123;.45\textwidth&#125; % Right column and width</span><br><span class="line">	some words or others;</span><br><span class="line"></span><br><span class="line">\end&#123;columns&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -570,8 +582,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -671,6 +692,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Equations"><span class="nav-number">1.</span> <span class="nav-text">Equations</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">1.1.</span> <span class="nav-text">Optimization</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#others"><span class="nav-number">2.</span> <span class="nav-text">others</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Footnotemark"><span class="nav-number">2.1.</span> <span class="nav-text">Footnotemark</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Figure"><span class="nav-number">3.</span> <span class="nav-text">Figure</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Adding-one-figure"><span class="nav-number">3.1.</span> <span class="nav-text">Adding one figure</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Colume"><span class="nav-number">4.</span> <span class="nav-text">Colume</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cut-the-colume-manually-mainly-used-in-slides-generating"><span class="nav-number">4.1.</span> <span class="nav-text">Cut the colume manually (mainly used in slides generating).</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

@@ -2,15 +2,15 @@
 == Bowen Li
 
 ~~~
-{}{img_left}{photos/Hao Sun.jpg}{alt text}{220px}{288px}
-[https://haosun.github.io  Hao Sun], Ph.D (CUHK-SZ), B.Sc (UESTC)
+{}{img_left}{photos/Bowen.jpg}{alt text}{220px}{288px}
+Bowen Li, Ph.D (CUHK-SZ), M.Sc (UCAS), B.E (HEU)
  \n 
 Post-doctoral Fellow \n
-City University of Hong Kong \n
-Kowloon Tong, Kowloon, Hong Kong \n
+Linköping University \n
+Linköping, Sweden \n
 \n
-Email: haosunnn@gmail.com \n
-\[[https://scholar.google.com/citations?user=dJWLFcUAAAAJ&hl=en Google Scholar]\]\[[CV.pdf Curriculem Vitae]\] \n
+Email: bowenli6@link.cuhk.edu.cn \n
+\[[https://scholar.google.ca/citations?hl=en&pli=1&user=DR1_IsQAAAAJ Google Scholar]\] \n
 ~~~
 
 
@@ -26,12 +26,13 @@ Email: haosunnn@gmail.com \n
 #- \[08-18-2018\] "Demographic inference via knowledge transfer in cross-domain recommender systems" is accepted by ICDM'18!
 
 == About me
-I'm currently a post-doctoral fellow at City University of Hong Kong with Prof. [https://www.ee.cityu.edu.hk/~alexyu/index.html Xianghao Yu]. I got my Ph.D. in Computer and Information Engineering at The Chinese University of Hong Kong, Shenzhen, under the supervisor of Prof. [http://chenjunting.org/ Junting Chen]. My research interest lies in matrix completion, tensor decomposition, generative models, with applications wireless communication and signal processing.
+I'm currently a post-doctoral fellow at Linköping University with Prof. [https://pappas-nikolaos.github.io/ Nikolaos Pappas]. I got my Ph.D. in Computer and Information Engineering at The Chinese University of Hong Kong, Shenzhen, under the supervisor of Prof. [http://chenjunting.org/ Junting Chen]. My research interest lies in resource allocation, interference management, network routing, and optimization for wireless communications.
 
 == Education 
-- Ph.D in Computer and Information Engineering, The Chinese University of Hong Kong, Shenzhen, Jan. 2020 - Dec. 2024
-- B.Sc in Biomedical Engineering, University of Electronic Science and Technology of China, Sep. 2014 - Jun. 2018
+- Ph.D in Computer and Information Engineering, The Chinese University of Hong Kong, Shenzhen, Sep. 2020 - Mar. 2025
+- M.Sc in Communication and Information Systems, University of Chinese Academy of Sciences, Sep. 2017 - Jun. 2020
+- B.E in TeleCommunication Engineering, Harbin Engineering University, Sep. 2013 - Jun. 2017
 
 == Research Interests 
-- Matrix completion, tensor decompostion, and generative AI methods in radio map construction
-- Near-field wireless communications and localization
+- Semantic communications
+- UAV communications

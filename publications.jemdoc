@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+== Publications 
+
+=== Under review
+- H. Sun, W. Huang and J. Chen, "[pubs/2025_WCL_fitting_loc_.pdf A Support Vector Approach in Segmented Regression for Map-assisted Non-cooperative
+Source Localization]", submitted to IEEE Wireless Communication Letters. \n
+
+=== Journal
+- H. Sun, and J. Chen, "[pubs/2024_TSP_IntBTD_final.pdf Integrated Interpolation and Block-term Tensor Decomposition for Spectrum
+Map Construction]", IEEE Transactions on Signal Processing, vol. 72, pp. 3896-3911, 2024. \n
+- H. Sun, and J. Chen, "[pubs/Leverage_sample_revise_final.pdf Energy-modified Leverage Sampling for Radio Map Construction via Matrix
+Completion]", IEEE Signal Processing Letters, vol. 31, pp. 1780-1784, 2024. \n
+- H. Sun, and J. Chen, [pubs/2022_MC-regres-TSP.pdf Propagation map reconstruction via interpolation assisted matrix completion]",
+IEEE Transactions on Signal Processing, vol. 70, pp. 6154-6169, 2022. \n
+
+=== Conference
+- H. Sun, J. Chen and Y. Luo, "[pubs/radio_map_tensor_ICASSP24.pdf Tensor-guided interpolation for off-grid power spectrum map construction]", in Proc. IEEE Int. Conf. Acoustic, Speech, and Signal Process. (ICASSP), 2024. \n
+- H. Sun, and J. Chen, "[pubs/MC-LPR_final.pdf Regression assisted matrix completion for reconstructing a propagation field with application to source localization]", in Proc. IEEE Int. Conf. Acoustic, Speech, and Signal Process. (ICASSP), 2022. \n
+- H. Sun, and J. Chen, "[pubs/nonunif-sl.pdf Grid optimization for matrix-based source localization under inhomogeneous sensor topology]", in Proc. IEEE Int. Conf. Acoustic, Speech, and Signal Process. (ICASSP), 2021. \n
+

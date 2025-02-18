@@ -2,19 +2,17 @@
 == Publications 
 
 === Under review
-- H. Sun, W. Huang and J. Chen, "[pubs/2025_WCL_fitting_loc_.pdf A Support Vector Approach in Segmented Regression for Map-assisted Non-cooperative
-Source Localization]", submitted to IEEE Wireless Communication Letters. \n
+- B. Li and J. Chen, "Radio Map Assisted Routing and Predictive Resource Allocation over Dynamic Low Altitude Networks", submitted to IEEE Trans. Wireless Commun. \n
 
 === Journal
-- H. Sun, and J. Chen, "[pubs/2024_TSP_IntBTD_final.pdf Integrated Interpolation and Block-term Tensor Decomposition for Spectrum
-Map Construction]", IEEE Transactions on Signal Processing, vol. 72, pp. 3896-3911, 2024. \n
-- H. Sun, and J. Chen, "[pubs/Leverage_sample_revise_final.pdf Energy-modified Leverage Sampling for Radio Map Construction via Matrix
-Completion]", IEEE Signal Processing Letters, vol. 31, pp. 1780-1784, 2024. \n
-- H. Sun, and J. Chen, [pubs/2022_MC-regres-TSP.pdf Propagation map reconstruction via interpolation assisted matrix completion]",
-IEEE Transactions on Signal Processing, vol. 70, pp. 6154-6169, 2022. \n
+- B. Li and J. Chen, "[https://ieeexplore.ieee.org/document/10653723 Radio Map Assisted Approach for Interference-Aware Predictive UAV Communications]", IEEE Trans. Wireless Commun., vol. 23, no. 11, pp. 16725-16741, Nov. 2024. \n
+- B. Li and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/10509564 Large Timescale Optimization for Communications over Aerial Ad Hoc Networks with Predetermined Trajectories]", IEEE Trans. Commun., vol. 72, no. 10, pp. 6371-6385, Oct. 2024. \n
+- S. Zhu, W. Huang, C. Jia, S. Wang, B. Li, Y. Zhang, [https://dl.acm.org/doi/10.1145/3399678 RF-AMOC: Human-Related RFID Tag Movement Identification in Access Management of Carries]",
+ACM Trans. Sen. Netw., vol. 16, no. 4, pp. 1-23, 2020.\n
 
 === Conference
-- H. Sun, J. Chen and Y. Luo, "[pubs/radio_map_tensor_ICASSP24.pdf Tensor-guided interpolation for off-grid power spectrum map construction]", in Proc. IEEE Int. Conf. Acoustic, Speech, and Signal Process. (ICASSP), 2024. \n
-- H. Sun, and J. Chen, "[pubs/MC-LPR_final.pdf Regression assisted matrix completion for reconstructing a propagation field with application to source localization]", in Proc. IEEE Int. Conf. Acoustic, Speech, and Signal Process. (ICASSP), 2022. \n
-- H. Sun, and J. Chen, "[pubs/nonunif-sl.pdf Grid optimization for matrix-based source localization under inhomogeneous sensor topology]", in Proc. IEEE Int. Conf. Acoustic, Speech, and Signal Process. (ICASSP), 2021. \n
-
+- B. Li and J. Chen, "Predictive Data Transportation over Low-Altitude UAV Networks with Time-Varying Topology: A Dynamic Graph Approach," Proc. GLOBECOM’24, Cape Town, South Africa, 2024. \n
+- Y. Zheng, H. Sun, B. Li, M. Jia, and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/10693686 A Radio Map Approach for Antenna Pattern Calibration in Low-Altitude Air-to-Ground Sensing]," Proc. ICCC Workshop’24, Hangzhou, China, 2024. \n
+- B. Li, J. Chen, “[https://ieeexplore.ieee.org/abstract/document/10000858 Handover Game for Data Transportation over Dynamic UAV Networks with Predictable Channels],” in Proc. GLOBECOM’22, virtual conference, 2022.\n
+- B. Li, S. Zhang, X. Shan, Y. Wang, Z. Gao, “[https://dl.acm.org/doi/abs/10.1145/3360774.3360820 A Social-Relation-Based Game Model for Distributed Clustering in Cooperative Wireless Networks],” in Proc. Mobiquitous’19, Houston, TX, USA, 2019.\n
+- B. Li, Z. Gao, X. Shan, W. Zhou and E. Ferrara, “[https://ieeexplore.ieee.org/abstract/document/8798844 SoReC: A Social-Relation Based Centrality Measure in Mobile Social Networks],” in Proc. ICT’19, Hanoi, Vietnam, 2019. \n

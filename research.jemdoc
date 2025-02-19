@@ -10,3 +10,11 @@ In order to implement aerial wireless communication networks for predictive comm
 - Air-to-ground interference: Aerial transmissions may cause substantial interference with terrestrial cellular networks due to the high likelihood of line-of-sight (LOS) conditions from UAVs in the sky.
 - Dynamic topology: The topology constructed by UAVs changes over time, leading to the channel state information (CSI) between the transmitting and receiving nodes (whether intended or not) varies over time.
 - Uncertain future CSI: Small-scale CSI realization in the future is unknown due to channel randomness.
+
+= Cross-layer transmission strategy
+This work focuses on the data routing and resource allocation in dynamic network topologies. Traditional schemes rely on time-expanded graphs with uniform and fine time subdivisions, making them impractical for interference-aware applications. This paper develops a dynamic space-time graph model with a cross-layer optimization framework that converts a joint routing and predictive resource allocation problem into a joint bottleneck path planning and resource allocation problem. We develop explicit deterministic bounds to handle the channel uncertainty and prove a monotonicity property in the problem structure that enables us to efficiently reach the globally optimal solution to the predictive resource allocation subproblem. Then, this approach is extended to multi-commodity transmission tasks through time-frequency allocation, and a bisection search algorithm is developed to find the optimum solution by leveraging the monotonicity of the feasible set family. Simulations verify that the single commodity algorithm approaches global optimality with more than 30 dB performance gain over the classical graph-based methods for delay-sensitive and large data transportation. At the same time, the multi-commodity method achieves 100X improvements in dense service scenarios and enables an additional 20 dB performance gain by data segmenting.
+
+~~~
+{}{img_left}{figs/graph_model_w3.png}{Dynamic space-time graph model with virtual edges}{}{180}{}
+{}{img_right}{img/graph_based_approach_results_w3.png}{the cumulative distribution function (CDF) of the interference leakage power of 100 replicate random experiments}{}{180}{}
+~~~

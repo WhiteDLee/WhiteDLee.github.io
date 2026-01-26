@@ -2,20 +2,23 @@
 == Publications 
 
 === Under review
+- J. Luo, B. Li, N. Pappas, Value of Communication in Semantics-Aware Goal-Oriented Communication Systems.\n
 - J. Luo, B. Li, N. Pappas, "[https://arxiv.org/abs/2512.01454 Value of Communication in Goal-Oriented Semantic Communications: A Pareto Analysis]."\n
 - B. Li, H. Zhang, M. Jia, J. Chen, N. Pappas, "[https://arxiv.org/abs/2512.01386 Joint CFO-Channel Estimation over CFO-Coherent SS Burst Sets for Low-Altitude Radio Mapping]."\n
-- B. Li, J. Luo, T. Charalambous, N. Pappas, "[https://arxiv.org/abs/2510.26708 Pareto-Optimal Sampling and Resource Allocation for Timely Communication in Shared-Spectrum Low-Altitude Networks]."\n
 - B. Li, J. Chen, N. Pappas, "[https://arxiv.org/abs/2510.14806 Joint Channel and CFO Estimation From Beam-Swept Synchronization Signal Under Strong Inter-Cell Interference]."
-- J. Chen, B. Li, H. Sun, S. Cui, N. Pappas, "[https://www.arxiv.org/abs/2509.01705 Predictive Communications for Low-Altitude Networks]."\n
-- B. Li and J. Chen, "[https://arxiv.org/abs/2507.19111 Radio Map Assisted Routing and Predictive Resource Allocation over Dynamic Low Altitude Networks]."\n
+
+=== Magazine
+- J. Chen, B. Li, H. Sun, S. Cui, N. Pappas, "[https://www.arxiv.org/abs/2509.01705 Predictive Communications for Low-Altitude Networks]", IEEE Internet of Things Magazine, Accepted/to appear, Jan. 2026.\n
 
 === Journal
+- B. Li and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/11300801 Radio Map-Assisted Routing and Predictive Resource Allocation Over Dynamic Low-Altitude Networks]", IEEE Trans. Wireless Commun., vol. 25, pp. 9955-9970, 2026.\n
 - B. Li and J. Chen, "[https://ieeexplore.ieee.org/document/10653723 Radio Map Assisted Approach for Interference-Aware Predictive UAV Communications]", IEEE Trans. Wireless Commun., vol. 23, no. 11, pp. 16725-16741, Nov. 2024. \n
 - B. Li and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/10509564 Large Timescale Optimization for Communications over Aerial Ad Hoc Networks with Predetermined Trajectories]", IEEE Trans. Commun., vol. 72, no. 10, pp. 6371-6385, Oct. 2024. \n
 - S. Zhu, W. Huang, C. Jia, S. Wang, B. Li, Y. Zhang, [https://dl.acm.org/doi/10.1145/3399678 RF-AMOC: Human-Related RFID Tag Movement Identification in Access Management of Carries]",
 ACM Trans. Sen. Netw., vol. 16, no. 4, pp. 1-23, 2020.\n
 
 === Conference
+- B. Li, J. Luo, T. Charalambous, N. Pappas, "[https://arxiv.org/abs/2510.26708 Pareto-Optimal Sampling and Resource Allocation for Timely Communication in Shared-Spectrum Low-Altitude Networks]", IEEE International Conference on Communications (ICC), May 2026.\n
 - Y. Chen, B. Li, S. Zhao, J. Chen and D. Tang, "[https://ieeexplore.ieee.org/abstract/document/11069570 Joint Antenna Selection and Beamforming for Parallel Over-The-Air Computing With Limited Rf Chains]," Proc. ICCCS'25, Chengdu, China, 2025, pp. 1-6. \n
 - B. Li and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/10901179 Predictive Data Transportation over Low-Altitude UAV Networks with Time-Varying Topology: A Dynamic Graph Approach]," Proc. GLOBECOM’24, Cape Town, South Africa, 2024. \n
 - Y. Zheng, H. Sun, B. Li, M. Jia, and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/10693686 A Radio Map Approach for Antenna Pattern Calibration in Low-Altitude Air-to-Ground Sensing]," Proc. ICCC Workshop’24, Hangzhou, China, 2024. \n

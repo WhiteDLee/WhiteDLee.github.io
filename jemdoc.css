@@ -4,6 +4,7 @@ table#tlayout {
     border: none;
     border-collapse: separate;
     background: white;
+    width: 100%;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0;
-	max-width: 1000px;
+	width: 100%;
 }
 
 #layout-menu {

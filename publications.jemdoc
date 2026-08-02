@@ -2,15 +2,14 @@
 == Publications 
 
 === Under review
-- *B. Li*, N. Pappas, "[papers/semantic_security.pdf Joint Accuracy and Confidentiality in Semantic-Aware Secure Remote Reconstruction]."\n
 - *B. Li*, J. Luo, T. Charalambous, N. Pappas, "[https://arxiv.org/abs/2604.20610 Model Predictive Communication for Timely Status Updates in Low-Altitude Networks]."\n
-- J. Luo, *B. Li*, N. Pappas, "[https://arxiv.org/abs/2512.01454 Value of Communication in Goal-Oriented Semantic Communications: A Pareto Analysis]."\n
 - *B. Li*, H. Zhang, M. Jia, J. Chen, N. Pappas, "[https://arxiv.org/abs/2512.01386 Joint CFO-Channel Estimation under Strong Inter-Cell Interference for Low-Altitude Radio Mapping]."
 
 === Magazine
 - J. Chen, *B. Li*, H. Sun, S. Cui, N. Pappas, "[https://www.arxiv.org/abs/2509.01705 Predictive Communications for Low-Altitude Networks]", IEEE Internet of Things Magazine, vol. 9, no. 3, pp. 25-32, May 2026.\n
 
 === Journal
+- J. Luo, *B. Li*, N. Pappas, "[https://arxiv.org/abs/2512.01454 Value of Communication in Goal-Oriented Semantic Communications: A Pareto Analysis]", IEEE Transactions on Information Theory, 2026.\n
 - *B. Li* and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/11300801 Radio Map-Assisted Routing and Predictive Resource Allocation Over Dynamic Low-Altitude Networks]", IEEE Transactions on Wireless Communications, vol. 25, pp. 9955-9970, 2026.\n
 - *B. Li* and J. Chen, "[https://ieeexplore.ieee.org/document/10653723 Radio Map Assisted Approach for Interference-Aware Predictive UAV Communications]", IEEE Transactions on Wireless Communications, vol. 23, no. 11, pp. 16725-16741, Nov. 2024. \n
 - *B. Li* and J. Chen, "[https://ieeexplore.ieee.org/abstract/document/10509564 Large Timescale Optimization for Communications over Aerial Ad Hoc Networks with Predetermined Trajectories]", IEEE Transactions on Communications, vol. 72, no. 10, pp. 6371-6385, Oct. 2024. \n
@@ -18,6 +17,7 @@
 ACM Transactions on Sensor Networks, vol. 16, no. 4, pp. 1-23, 2020.\n
 
 === Conference
+- *B. Li*, N. Pappas, "[papers/semantic_security.pdf Joint Accuracy and Confidentiality in Semantic-Aware Secure Remote Reconstruction]", Proceedings of the 2026 IEEE Global Communications Conference (GLOBECOM), 2026.\n
 - J. Luo, *B. Li*, and N. Pappas, "Value of Communication in Semantics-Aware Goal-Oriented Communication Systems," Proceedings of the IEEE Conference on Decision and Control (CDC), 2026.\n
 - H. Xu, *B. Li*, J. Chen, and N. Pappas, "Rotatable RIS for Temporal Low-Altitude Corridor Coverage in Predictive Communications," Proceedings of the IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC), 2026.\n
 - *B. Li*, J. Chen, N. Pappas, "[https://arxiv.org/abs/2510.14806 Joint Channel and CFO Estimation From Beam-Swept Synchronization Signal Under Strong Inter-Cell Interference]", IEEE International Conference on Communications (ICC) Workshop, May 2026.\n
